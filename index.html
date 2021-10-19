@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Création d'un jeu Clicker">
-    <link rel="stylesheet" href="style.css">
-    <title>Clicker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <p id="score">Score : 0 </p>
-        <button id="count">Click Me</button>
-        <button id="bonus">Bonus</button>
-        <input type="text" class="input" id="input-bonus">
-        <button id="autoClick">Incrémentation auto</button>
-        <input type="text" class="input" id="input-autoclick">
-        <button id="special">Bonus Spécial</button>
-        <input type="text" class="input" id="input-special">
-    </div>
-    <script src="main.js"></script>
+    <p id="score">Score: </p>
+    <button id="clicker">Click me</button>
+
+    <button id="click-bonus" disabled>add click</button>
+    <p id="click-bonus-price"></p>
+    <p id="current-click-bonus"></p>
+    
+    <button id="auto-click" disabled>auto click</button>
+    <p id="auto-click-price"></p>
+    <p id="current-auto-click"></p>
+    
+    <button id="mega-click" disabled>mega click</button>
+    <p id="mega-click-price"></p>
+    <p id="current-mega-click"></p>
+    <p id="timer"></p>
+    
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
