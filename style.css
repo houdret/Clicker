@@ -1,1 +1,366 @@
-/* création du css bootstrap par Sandra */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+body {
+  background-image: url("img/Hill.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  gap: 100px;
+}
+
+#score {
+  height: 80px;
+  position: absolute;
+  top: 30px;
+  right: 1230px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 300px;
+  margin: 10px;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #2e466e),
+    to(#415989)
+  );
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  font-size: xx-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#count {
+  top: 90%;
+  left: 35%;
+  position: absolute;
+  font-family: "Anton", sans-serif;
+  width: auto;
+  background: #e67e22;
+  display: inline-block;
+  color: #ecf0f1;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+#front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  -webkit-box-shadow: 0px 6px 0px #d35400;
+  box-shadow: 0px 6px 0px #d35400;
+  color: white;
+  font-size: x-large;
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+#front:active {
+  -webkit-box-shadow: 0px 2px 0px #d35400;
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 4px;
+}
+
+#dino_egg {
+  top: 90%;
+  -webkit-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  left: 40%;
+  position: absolute;
+}
+
+#cookie {
+  background-size: 250px 250px;
+  display: block;
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  right: 120px;
+  top: 10px;
+}
+
+#cookie_score {
+  background-size: 250px 250px;
+  display: block;
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+
+#bonus {
+  position: absolute;
+  top: 190px;
+  right: 300px;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #2e466e),
+    to(#415989)
+  );
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#bonus:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #408c99),
+    to(#599bb3)
+  );
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#bonus:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+#input-bonus {
+  position: absolute;
+  top: 190px;
+  right: 100px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #ededed),
+    to(#dfdfdf)
+  );
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  width: 180px;
+  height: 50px;
+  opacity: 50%;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+#autoClick {
+  position: absolute;
+  top: 490px;
+  right: 280px;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #23395e;
+  box-shadow: inset 0px 0px 15px 3px #23395e;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #2e466e),
+    to(#415989)
+  );
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #2e466e;
+  border-radius: 17px;
+  border: 1px solid #1f2f47;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#autoClick:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #408c99),
+    to(#599bb3)
+  );
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#autoClick:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+#input-autoclick {
+  position: absolute;
+  top: 490px;
+  right: 80px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #ededed),
+    to(#dfdfdf)
+  );
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  width: 180px;
+  height: 50px;
+  opacity: 50%;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+#special {
+  position: absolute;
+  top: 790px;
+  right: 290px;
+  -webkit-box-shadow: inset 0px 0px 15px 3px #ff8c00;
+  box-shadow: inset 0px 0px 15px 3px #d67908;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #d67908),
+    to(#ffbf00)
+  );
+  background: linear-gradient(to bottom, #ff8c00 5%, #ffbf00 100%);
+  background-color: #ffbf00;
+  border-radius: 17px;
+  border: 1px solid #ff8c00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ff8c00;
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#special:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, rgb(255, 178, 85)),
+    to(#ffc334)
+  );
+  background: linear-gradient(to bottom, rgb(255, 178, 85) 5%, #ffc334 100%);
+  background-color: rgb(255, 178, 85);
+  font-size: x-large;
+  color: aliceblue;
+  font-family: "Anton", sans-serif;
+}
+
+#special:active {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+#input-special {
+  position: absolute;
+  top: 790px;
+  right: 100px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(5%, #ededed),
+    to(#dfdfdf)
+  );
+  background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background-color: #ededed;
+  width: 180px;
+  height: 50px;
+  opacity: 50%;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #777777;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
